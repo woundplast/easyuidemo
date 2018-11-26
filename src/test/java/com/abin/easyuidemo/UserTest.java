@@ -7,12 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class UserTest extends TmallApplicationTests {
     @Autowired
-    UserDao userMapper;
+    UserDao userDao;
 
     @Test
     public void name() {
-        User user = userMapper.selectByPrimaryKey(12);
+        User user = userDao.selectByPrimaryKey(12);
         System.out.println(user);
+
     }
 
 
