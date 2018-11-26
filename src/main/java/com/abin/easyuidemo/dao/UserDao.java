@@ -2,7 +2,7 @@ package com.abin.easyuidemo.dao;
 
 import com.abin.easyuidemo.entity.User;
 
-public interface UserMapper {
+public interface UserDao {
     int deleteByPrimaryKey(Integer id);
 
     int insert(User record);
